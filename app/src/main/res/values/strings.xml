@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">3634Assignment</string>
+    <string name="studbud">StudBud</string>
+    <string name="splash_des">Where Learning Happens</string>
+    <string name="app_logo">App Logo</string>
+    <string name="log_in_btn">Log In</string>
+    <string name="sign_up_btn">Sign Up</string>
+    <string name="course">C o u r s e s</string>
+    <string name="learn_btn">Start Learning Now</string>
+    <string name="homepage_des">Learn Everything About Finance</string>
+    <string name="quiz">Q u i z</string>
+    <string name="quiz_des">Test Yourself</string>
+    <string name="quiz_btn">Start Quiz</string>
+    <string name="profile_button">Profile Button</string>
+    <string name="new_account_btn">Create New Account</string>
+    <string name="sing_up_email">Please Enter Your Email</string>
 </resources>
