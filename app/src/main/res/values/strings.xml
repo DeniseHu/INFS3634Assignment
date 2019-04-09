@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">3634Assignment</string>
+    <string name="course_details">Course Details</string>
     <string name="studbud">StudBud</string>
     <string name="splash_des">Where Learning Happens</string>
     <string name="app_logo">App Logo</string>
@@ -14,4 +15,10 @@
     <string name="profile_button">Profile Button</string>
     <string name="new_account_btn">Create New Account</string>
     <string name="sing_up_email">Please Enter Your Email</string>
+    <string name="profile_page">Profile Page</string>
+    <string name="user_email">User Email</string>
+    <string name="log_out_btn">Log Out</string>
+    <string name="course_name">Course Name</string>
+    <string name="course_des">Course Description</string>
+    <string name="image_badges">Badges</string>
 </resources>

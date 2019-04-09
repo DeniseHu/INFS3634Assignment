@@ -7,10 +7,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.example.a3634assignment.Courses.CourseList;
+import com.example.a3634assignment.Quizzes.QuizPage;
+
 public class HomePage extends AppCompatActivity {
 
     ImageButton profileBtn;
     Button learnBtn;
+    Button quizBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +23,7 @@ public class HomePage extends AppCompatActivity {
 
         profileBtn = findViewById(R.id.profileBtn);
         learnBtn = findViewById(R.id.learn_btn);
+        quizBtn = findViewById(R.id.quiz_btn);
 
         // Method to guide user to the Profile Page
         profileBtn.setOnClickListener(new View.OnClickListener() {
@@ -34,6 +39,14 @@ public class HomePage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomePage.this, CourseList.class);
+                startActivity(intent);
+            }
+        });
+
+        quizBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomePage.this, QuizPage.class);
                 startActivity(intent);
             }
         });

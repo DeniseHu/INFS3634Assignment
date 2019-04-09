@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CourseList"></activity>
+        <activity android:name=".Quizzes.QuizPage"></activity>
+        <activity android:name=".Videos.VideoPage" />
+        <activity
+            android:name=".Courses.CourseList"
+            android:label="@string/course_details"
+            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomePage" />
+        </activity>
         <activity android:name=".ProfilePage" />
         <activity android:name=".SignUpPage" />
         <activity android:name=".HomePage" />
