@@ -21,4 +21,13 @@
     <string name="course_name">Course Name</string>
     <string name="course_des">Course Description</string>
     <string name="image_badges">Badges</string>
+    <string name="overview">Overview</string>
+    <string name="vid_des_topic">What to expect?</string>
+    <string name="vid_des_1">To make learning more effective and interesting, StudBud has avoided using standard textbook materials but instead provides digital learning content to inspire and engage students.</string>
+    <string name="vid_des_2">Each topic will be provided with videos for you to watch, once you feel like you’ve understand the topic challenge yourself with the Quiz provided by StudBud.</string>
+    <string name="vid_des_topic_2">Let\'s Get Started</string>
+    <string name="vid_savings_name">Saving vs Investing</string>
+    <string name="vid_start_btn">Start</string>
+    <string name="vid_fiscal_name">Fiscal Policy</string>
+    <string name="vid_labour_name">Labour Market</string>
 </resources>

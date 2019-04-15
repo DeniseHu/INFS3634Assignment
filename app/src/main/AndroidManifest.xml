@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Quizzes.QuizPage"></activity>
+        <activity android:name=".Videos.VideoDes"></activity>
+        <activity android:name=".Quizzes.QuizPage" />
         <activity android:name=".Videos.VideoPage" />
         <activity
             android:name=".Courses.CourseList"

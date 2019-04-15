@@ -11,6 +11,7 @@ import android.widget.Button;
 
 import com.example.a3634assignment.HomePage;
 import com.example.a3634assignment.R;
+import com.example.a3634assignment.Videos.VideoDes;
 import com.example.a3634assignment.Videos.VideoPage;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -78,7 +79,7 @@ public class CourseList extends AppCompatActivity {
 
     private void launchDetailActivity(int position) {
 
-        Intent intent = new Intent(this, VideoPage.class);
+        Intent intent = new Intent(this, VideoDes.class);
         intent.putExtra(EXTRA_MESSAGE, position);
         startActivity(intent);
 
