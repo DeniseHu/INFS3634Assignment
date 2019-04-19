@@ -5,8 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.FrameLayout;
-import android.widget.VideoView;
 
 import com.example.a3634assignment.Courses.CourseList;
 import com.example.a3634assignment.Quizzes.QuizPage;
@@ -16,8 +14,6 @@ public class VideoPage extends AppCompatActivity {
 
     private Button btnBackVideo;
     private Button btnTest;
-    private FrameLayout frameLayout;
-    private VideoView videoView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,5 +31,12 @@ public class VideoPage extends AppCompatActivity {
             }
         });
 
+        btnTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(VideoPage.this, QuizPage.class);
+                startActivity(intent);
+            }
+        });
     }
 }

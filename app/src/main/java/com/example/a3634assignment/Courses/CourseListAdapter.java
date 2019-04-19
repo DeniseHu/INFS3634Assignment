@@ -12,16 +12,14 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
+//Reference code for CourseListAdapter & CourseList: https://www.youtube.com/watch?v=vpObpZ5MYSE
 public class CourseListAdapter extends RecyclerView.Adapter<CourseListAdapter.AdapterViewHolder> {
     private ArrayList<Courses> mCourses;
     private RecyclerViewClickListener mListener;
 
-
     public CourseListAdapter(ArrayList<Courses> courses, RecyclerViewClickListener listener) {
-
         mCourses = courses;
         mListener = listener;
-
     }
 
     public interface RecyclerViewClickListener {
@@ -48,9 +46,7 @@ public class CourseListAdapter extends RecyclerView.Adapter<CourseListAdapter.Ad
 
         @Override
         public void onClick(View view) {
-
             mListener.onClick(view, getAdapterPosition());
-
         }
     }
 
@@ -69,12 +65,10 @@ public class CourseListAdapter extends RecyclerView.Adapter<CourseListAdapter.Ad
         adapterViewHolder.shortDes.setText(mCourses.get(position).getCourseDes());
         //To load image from FireBase using Picasso
         Picasso.get().load(mCourses.get(position).getCourseImage()).into(adapterViewHolder.courseImage);
-
     }
 
     @Override
     public int getItemCount() {
         return mCourses.size();
     }
-
 }

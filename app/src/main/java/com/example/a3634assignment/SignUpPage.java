@@ -40,14 +40,11 @@ public class SignUpPage extends AppCompatActivity {
                 final String uEmail = userEmail.getText().toString();
                 final String uPassword = userPassword.getText().toString();
 
-                if (uEmail.isEmpty() || uPassword.isEmpty()){
-
+                //if any of the field is empty, a toast message is displayed
+                if (uEmail.isEmpty() || uPassword.isEmpty()) {
                     errorMessage("Please Verify All Fields");
-
-                } else{
-
-                    CreateUserAccount (uEmail, uPassword);
-
+                } else {
+                    CreateUserAccount(uEmail, uPassword);
                 }
             }
         });
@@ -60,28 +57,27 @@ public class SignUpPage extends AppCompatActivity {
                 .addOnCompleteListener(SignUpPage.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()){
+                        if (task.isSuccessful()) {
 
                             //user account created successfully
-                            Toast.makeText(SignUpPage.this,"Registration Successful", Toast.LENGTH_LONG).show();
+                            Toast.makeText(SignUpPage.this, "Registration Successful", Toast.LENGTH_LONG).show();
                             userEmail.setText("");
                             userPassword.setText("");
 
-                            startActivity(new Intent(SignUpPage.this,HomePage.class));
+                            startActivity(new Intent(SignUpPage.this, HomePage.class));
 
-                        }else{
+                        } else {
 
-                            //if user data failed to be stored in FireBase, error message from FireBase is displayed to user
-                            Toast.makeText(SignUpPage.this,task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                            //if user data failed to be stored in Firebase, error message from Firebase is displayed to user
+                            Toast.makeText(SignUpPage.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
 
                         }
                     }
                 });
     }
 
-
     //method to show error message to the user
-    private void errorMessage (String message){
+    private void errorMessage(String message) {
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
     }
 

@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+//Reference code for Splash Screen: https://www.youtube.com/watch?v=jXtof6OUtcE
 public class MainActivity extends AppCompatActivity {
 
     //Adds time interval for the Splash Welcome Screen
@@ -19,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent splashIntent = new Intent (MainActivity.this, LoginPage.class);
+                Intent splashIntent = new Intent(MainActivity.this, LoginPage.class);
                 startActivity(splashIntent);
                 finish();
             }
-        },SPLASH_TIME);
+        }, SPLASH_TIME);
     }
 }

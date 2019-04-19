@@ -62,4 +62,106 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profileEmail" />
 
+    <FrameLayout
+        android:id="@+id/saving_badge_wrap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:elevation="10dp"
+        android:background="#d1ebba"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_out_btn">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/badge_saving" />
+
+        <TextView
+            android:layout_width="241dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="Smart Saver"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:fontFamily="casual" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/labour_badge_wrap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:elevation="10dp"
+        android:background="#ded1f2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saving_badge_wrap">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/badge_labour" />
+
+        <TextView
+            android:layout_width="241dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="Market Analyser"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:fontFamily="casual" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fiscal_badge_wrap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:elevation="10dp"
+        android:background="#dfe39f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labour_badge_wrap">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/badge_fiscal"/>
+
+        <TextView
+            android:layout_width="241dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="Economist"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:fontFamily="casual" />
+
+    </FrameLayout>
+
 </android.support.constraint.ConstraintLayout>

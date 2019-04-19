@@ -30,4 +30,7 @@
     <string name="vid_start_btn">Start</string>
     <string name="vid_fiscal_name">Fiscal Policy</string>
     <string name="vid_labour_name">Labour Market</string>
+    <string name="TEST">Test</string>
+    <string name="email_icon">email_icon</string>
+    <string name="password_icon">password_icon</string>
 </resources>

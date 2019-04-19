@@ -25,7 +25,6 @@ public class HomePage extends AppCompatActivity {
         learnBtn = findViewById(R.id.learn_btn);
         quizBtn = findViewById(R.id.quiz_btn);
 
-        // Method to guide user to the Profile Page
         profileBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,7 +33,6 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
-        // Method to guide user to the CourseList Page
         learnBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
