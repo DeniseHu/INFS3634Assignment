@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.a3634assignment.HomePage;
 import com.example.a3634assignment.R;
 
 public class QuizPage extends AppCompatActivity {
@@ -13,6 +14,7 @@ public class QuizPage extends AppCompatActivity {
     Button savingQuiz;
     Button labourQuiz;
     Button fiscalQuiz;
+    Button backBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,7 @@ public class QuizPage extends AppCompatActivity {
         savingQuiz = findViewById(R.id.saving_test_btn);
         labourQuiz = findViewById(R.id.labour_test_btn);
         fiscalQuiz = findViewById(R.id.fiscal_test_btn);
+        backBtn = findViewById(R.id.quiz_back_btn);
 
         savingQuiz.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +49,14 @@ public class QuizPage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(QuizPage.this, QuestionDisplay.class);
                 intent.putExtra("buttonNo", 3);
+                startActivity(intent);
+            }
+        });
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(QuizPage.this, HomePage.class);
                 startActivity(intent);
             }
         });

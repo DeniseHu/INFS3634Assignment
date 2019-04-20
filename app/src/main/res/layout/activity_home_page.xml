@@ -121,13 +121,12 @@
         app:srcCompat="@drawable/user_login" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="103dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:contentDescription="@string/app_logo"
+        android:id="@+id/imageView6"
+        android:layout_width="51dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
         app:layout_constraintEnd_toStartOf="@+id/studBud"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/app_logo_ver2" />
