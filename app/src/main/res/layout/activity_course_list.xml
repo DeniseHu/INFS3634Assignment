@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/courselist_page"
+    android:orientation="vertical"
     tools:context=".Courses.CourseList">
 
     <TextView
@@ -30,6 +30,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:layoutAnimation="@anim/layout_courselist_animation" />
 
 </LinearLayout>

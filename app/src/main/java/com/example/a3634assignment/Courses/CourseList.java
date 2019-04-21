@@ -1,5 +1,6 @@
 package com.example.a3634assignment.Courses;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +8,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
 
 import com.example.a3634assignment.R;
 import com.example.a3634assignment.Videos.VideoPage;
@@ -80,5 +83,17 @@ public class CourseList extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE, position);
         startActivity(intent);
 
+    }
+
+    //Reference code for animation: https://www.youtube.com/watch?v=5PMI_bHGehg
+    //rerun animation
+    private void runLayoutAnimation(RecyclerView recyclerView) {
+        Context context = recyclerView.getContext();
+        LayoutAnimationController layoutAnimationController =
+                AnimationUtils.loadLayoutAnimation(context, R.anim.layout_courselist_animation);
+
+        recyclerView.setLayoutAnimation(layoutAnimationController);
+        recyclerView.getAdapter().notifyDataSetChanged();
+        recyclerView.scheduleLayoutAnimation();
     }
 }

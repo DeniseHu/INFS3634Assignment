@@ -5,7 +5,7 @@ public class Courses {
     private String courseDes;
     private String courseImage;
 
-    public Courses(){
+    public Courses() {
 
     }
 

@@ -33,4 +33,7 @@
     <string name="TEST">Test</string>
     <string name="email_icon">email_icon</string>
     <string name="password_icon">password_icon</string>
+    <string name="quiz_nospace">Quiz</string>
+    <string name="back_to_main">Back To Main</string>
+    <string name="quiz_page_des">Choose a topic and challenge yourself!</string>
 </resources>

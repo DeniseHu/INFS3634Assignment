@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePage"
-    android:background="@drawable/home_page">
+    android:background="@drawable/home_page"
+    tools:context=".HomePage">
 
     <TextView
         android:id="@+id/studBud"
@@ -130,6 +130,5 @@
         app:layout_constraintEnd_toStartOf="@+id/studBud"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/app_logo_ver2" />
-
 
 </android.support.constraint.ConstraintLayout>
