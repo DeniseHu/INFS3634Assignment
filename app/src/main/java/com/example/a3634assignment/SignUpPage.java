@@ -44,6 +44,7 @@ public class SignUpPage extends AppCompatActivity {
                 if (uEmail.isEmpty() || uPassword.isEmpty()) {
                     errorMessage("Please Verify All Fields");
                 } else {
+                    //creates user data in Firebase Auth
                     CreateUserAccount(uEmail, uPassword);
                 }
             }
